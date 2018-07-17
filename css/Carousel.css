@@ -1,0 +1,93 @@
+*{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.box{
+	width: 100%;
+	height: auto;
+}
+.box .Carousel_figur{
+	height: 50vw;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.box .Carousel_figur .main_image ul{
+	height: 50vw;
+	width: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+.box .Carousel_figur .main_image ul li{
+	float: left;
+	width: 100%;
+	height: 50vw;
+	display: block;
+	left: 0;
+}
+.box .Carousel_figur .main_image ul li>img{
+	height: auto;
+	width: 100%;
+	display: block;
+}
+/*悬浮按钮组件*/
+.box .Carousel_figur .flicking_con{
+	position: absolute;
+	top: 47vw;
+	z-index: 999;
+	width: 100%;
+	height: 5vw;
+	padding-left: 40vw;
+	cursor: pointer;
+}
+.box .Carousel_figur .flicking_con a{
+	float: left;
+	width: 1.3vw;
+	height: 1.3vw;
+	border-radius: 5vw;
+	border: 2px solid white;
+	margin-left: 1vw;
+	margin-right: 1vw;
+}
+.box .Carousel_figur .flicking_con a.on{
+	
+	border: 1px solid transparent;
+	background-color: pink;
+}
+/*左右组件*/
+.box .main_image a{
+	z-index: 99999;
+	top: 24vw;
+	position: absolute;
+	background: red;
+	display: block;
+	height: 10vw !important;
+	width: 10vw !important;
+	display: none;
+	
+}
+.box .main_image a>img{
+	height: 5vw;
+	display: block;
+}
+/*.box .main_image  #btn_prev{
+	margin-left: 8vw;
+	left: 10vw;
+}
+.box .main_image  #btn_next{
+	margin-right: 8vw;
+	right: 10vw;
+}*/
+.box .main_image #btn_prev{
+	background:url(https://cdn.jsdelivr.net/gh/moeccc/coopcoop@0.0.1/image/hover_left.png) no-repeat left top;
+	background-size:2vw 2vw ;
+	left:2vw;
+	
+}
+.box .main_image #btn_next{
+	background:url(https://cdn.jsdelivr.net/gh/moeccc/coopcoop@0.0.1/image/hover_right.png) no-repeat right top;
+	background-size:2vw 2vw ;
+	right:2vw;
+}
